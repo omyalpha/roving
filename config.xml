@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.rovingcare.app" version="4.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Roving Care</name>
+    <description>
+        Roving Care Sudan Mobile App
+    </description>
+    <author email="info@webhosting.sd" href="http://cordova.io">
+        Omar Digna
+    </author>
+    <icon src="icon.png" />
+	<allow-intent href="*" />
+	<allow-navigation href="*" />
+    <content src="index.html" />
+    <access origin="*" />
+	<access origin="cdvfile://*" />
+	<preference name="android-minSdkVersion" value="30"/>
+	<preference name="android-targetSdkVersion" value="30" />
+	
+	<plugin name="cordova-plugin-whitelist" spec="1.3.4" />
+	<plugin name="cordova-plugin-file" />
+	
+<!--	<preference name="AndroidPersistentFileLocation" value="Internal" />
+	<preference name="AndroidExtraFilesystems" value="files,files-external,documents,sdcard,root,cache,cache-external" />
+-->
+	<!-- file download -->
+	<feature name="File">
+      <param name="android-package" value="org.apache.cordova.FileUtils" />
+	  <param name="ios-package" value="CDVFile" />
+	</feature>
+	<feature name="FileTransfer">
+      <param name="android-package" value="org.apache.cordova.FileTransfer" />
+	  <param name="ios-package" value="CDVFileTransfer" />
+	</feature>
+	<!--
+	<feature name="File">
+		<param name="ios-package" value="CDVFile" />
+	</feature>
+	<feature name="FileTransfer">
+		<param name="ios-package" value="CDVFileTransfer" />
+	</feature>
+	
+	<allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+    </platform>
+	-->
+</widget>
